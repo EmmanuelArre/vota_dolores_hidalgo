@@ -92,6 +92,7 @@ void main() {
     expect(ganadores.first.id, 'op1');
   });
 
+
   // RONDA 6
   test('si hay empate, determinarGanador regresa mas de una opcion', () {
     final votacion = Votacion(
