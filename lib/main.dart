@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
+import 'presentation/votacion_screen.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+void main() => runApp(const VotaDoloresApp());
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class VotaDoloresApp extends StatelessWidget {
+  const VotaDoloresApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(body: Center(child: Text('Hello World!'))),
+    return MaterialApp(
+      title: 'Vota Dolores Hidalgo',
+      theme: ThemeData(colorSchemeSeed: Colors.indigo, useMaterial3: true),
+      home: const VotacionScreen(),
     );
   }
 }
